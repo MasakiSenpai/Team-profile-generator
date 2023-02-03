@@ -71,12 +71,12 @@ function generateManager(emp) {
             <div class="card-body p-0">
                 <div class="bg-primary rounded-top text-center p-3">
                     <h5 class="card-title text-white fs-2">${emp.getName()}</h5>
-                    <h6 class="card-subtitle mb-2 text-white fs-4">Manager</h6>
+                    <h6 class="card-subtitle mb-2 text-white fs-4"><i class="fa-solid fa-mug-hot"></i> Manager</h6>
                 </div>
                 <div class="card m-3" style="max-width: 18rem;">
                     <ul class="list-group list-group-flush">
                     <li class="list-group-item"> <b>Id: </b>${emp.getId()}</li>
-                    <li class="list-group-item"> <b>Email: </b>${emp.getEmail()}</li>
+                    <li class="list-group-item"> <b>Email: </b><a href="mailto:${emp.getEmail()}">${emp.getEmail()}</a></li>
                     <li class="list-group-item"> <b>Office Number: </b>${emp.getOfficeNumber()}</li>
                 </ul>
                 </div>
@@ -121,13 +121,13 @@ function generateEngineer(emp) {
           <div class="card-body p-0">
             <div class="bg-primary rounded-top text-center p-3">
               <h5 class="card-title text-white fs-2">${emp.getName()}</h5>
-              <h6 class="card-subtitle mb-2 text-white fs-4">Engineer</h6>
+              <h6 class="card-subtitle mb-2 text-white fs-4"><i class="fa-solid fa-glasses"></i> Engineer</h6>
             </div>
             <div class="card m-3" style="max-width: 18rem;">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item"> <b>Id: </b> ${emp.getId()}</li>
-                  <li class="list-group-item"> <b>Email: </b>${emp.getEmail()}</li>
-                  <li class="list-group-item"> <b>GitHub: </b>${emp.getGithub()}</li>
+                  <li class="list-group-item"> <b>Email: </b><a href="mailto:${emp.getEmail()}">${emp.getEmail()}</a></li>
+                  <li class="list-group-item"> <b>GitHub: </b><a href="https://github.com/${emp.getGithub()}">${emp.getGithub()}</a></li>
                 </ul>
               </div>
           </div>
@@ -171,12 +171,12 @@ function generateIntern(emp) {
           <div class="card-body p-0">
             <div class="bg-primary rounded-top text-center p-3">
               <h5 class="card-title text-white fs-2">${emp.getName()}</h5>
-              <h6 class="card-subtitle mb-2 text-white fs-4">Intern</h6>
+              <h6 class="card-subtitle mb-2 text-white fs-4"><i class="fa-solid fa-graduation-cap"></i> Intern</h6>
             </div>
             <div class="card m-3" style="max-width: 18rem;">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item"> <b>Id: </b> ${emp.getId()}</li>
-                  <li class="list-group-item"> <b>Email: </b>${emp.getEmail()}</li>
+                  <li class="list-group-item"> <b>Email: </b><a href="mailto:${emp.getEmail()}">${emp.getEmail()}</a></li>
                   <li class="list-group-item"> <b>School: </b>${emp.getSchool()}</li>
                 </ul>
               </div>
@@ -195,6 +195,7 @@ function generateHtml() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/a06045c397.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./css/style.css">
         <title>Employees</title>
     </head>
